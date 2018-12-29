@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.niu.cs.z1822939.shapes.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Find the area of"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/shapeRadioGroup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp">
+
+        <RadioButton
+            android:id="@+id/triangleRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Triangle" />
+
+        <RadioButton
+            android:id="@+id/circleRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Circle" />
+
+        <RadioButton
+            android:id="@+id/ellipseRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ellipse" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shapeRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="DO CALCULATION" />
+
+    <TextView
+        android:id="@+id/areaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:hint="Calculated area will display here"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculationButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textSize="20sp" />
+
+</RelativeLayout>

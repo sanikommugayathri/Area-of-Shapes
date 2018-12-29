@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.niu.cs.z1822939.shapes.Shape">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dimension1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dimension1EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/calculateButton"
+        android:layout_alignRight="@+id/calculateButton"
+        android:layout_below="@+id/dimension1TextView"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dimension2EditText"
+        android:layout_marginTop="30dp"
+        android:text="CALCULATE THE AREA" />
+
+    <TextView
+        android:id="@+id/dimension2Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dimension1EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dimension2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dimension2Textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>
